@@ -1,0 +1,27 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "a burger app that allows you to eat and list your own burger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiongkb/burger.git"
+  },
+  "keywords": [
+    "burger"
+  ],
+  "author": "xiongkb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiongkb/burger/issues"
+  },
+  "homepage": "https://github.com/xiongkb/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.18.1"
+  }
+}
