@@ -23,4 +23,5 @@ const burger = {
     }
 };
 
+// exporting this file
 module.exports = burger;

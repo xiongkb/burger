@@ -1,11 +1,11 @@
 // setting the variables for express and handlebars
 const express = require("express");
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 const app = express();
 
-app.use(express.satic("public"));
+app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
-app.use(xpress.json());
+app.use(express.json());
 
 const handlebar = require("express-handlebars");
 

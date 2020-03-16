@@ -23,6 +23,7 @@ function objToSql(ob) {
     return arr.toString();
 };
 
+// creating orm for sql function/input
 const orm = {
     all: function(tableInput, cb) {
         queryString = "SELECT * FROM " + tableInput + ";";
@@ -56,4 +57,5 @@ const orm = {
     }
 };
 
+// exporting this file
 module.exports = orm;
