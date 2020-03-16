@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/", function(req, res) {
     burger.all(function(data) {
         let burObj = {
-            burger: data
+            burgers: data
         };
         console.log(burObj);
         res.render("index", burObj);
