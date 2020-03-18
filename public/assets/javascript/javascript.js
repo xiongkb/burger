@@ -17,7 +17,7 @@ $(function() {
             location.reload();
         });
     });
-
+    // adding in new burger
     $(".create-form").on("submit", function(event) {
         event.preventDefault();
         let newBurger = {
@@ -33,5 +33,17 @@ $(function() {
             location.reload();
         });
     });
+    // deleting burger
+    $(".delete-burger").on("click", function(event) {
+        event.preventDefault();
+        let id = $(this).data("id");
+
+        $.ajax("/api/burgers/" + id, {
+            type: "DELETE"
+        }).then(function() {
+            console.log("Trashed the stink burger!");
+            location.reload();
+        })
+    })
 });
 

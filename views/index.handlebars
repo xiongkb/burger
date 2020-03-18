@@ -5,15 +5,15 @@
         <img src="/assets/img/burger.png" alt="open-burger.png" class="burger-pic">
     </div>
 
-    <div class="row text-center">
+    <div class="row">
         <div class="col">
-            <h4>Burgers Waiting to be Eaten</h4>
+            <h4 class="burger-title">Burgers Waiting to be Eaten</h4>
             <ol class="burger-to-eat">
                 {{#each burgers}}
                     {{#unless devoured}}
                     <li>
                         {{burger_name}}
-                            <button class="eat-burger" data-id="{{id}}" data-state="true">Eat!</button>
+                        <button class="eat-burger" data-id="{{id}}" data-state="true">Eat!</button>
                     </li>
                     {{/unless}}
                 {{/each}}
@@ -21,11 +21,14 @@
         </div>
 
         <div class="col">
-            <h4>Burgers Devoured</h4>
+            <h4 class="burger-title">Burgers Devoured</h4>
             <ol class="burger-eaten">
                 {{#each burgers}}
                     {{#if devoured}}
-                        <li>{{burger_name}}</li>
+                        <li>
+                            {{burger_name}}
+                            <button class="delete-burger" data-id="{{id}}">Trash!</button>
+                        </li>
                     {{/if}}
                 {{/each}}
             </ol>
