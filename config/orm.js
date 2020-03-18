@@ -34,7 +34,7 @@ const orm = {
             cb(results);
         });
     },
-    create: function(table, col, val, cd) {
+    create: function(table, col, val, cb) {
         queryString = "INSERT INTO " + table + " (" + col.toString() + ") " + "VALUES (" + questionMarks(val.length) + ") ";
         console.log(queryString);
         connection.query(queryString, val, function(err, result) {
