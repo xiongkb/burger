@@ -11,9 +11,9 @@
             <ol class="burger-to-eat">
                 {{#each burgers}}
                     {{#unless devoured}}
-                    <li>
+                    <li class="lists">
                         {{burger_name}}
-                        <button class="eat-burger" data-id="{{id}}" data-state="true">Eat!</button>
+                        <button class="eat-burger btn btn-success" data-id="{{id}}" data-state="true">Eat!</button>
                     </li>
                     {{/unless}}
                 {{/each}}
@@ -25,23 +25,23 @@
             <ol class="burger-eaten">
                 {{#each burgers}}
                     {{#if devoured}}
-                        <li>
+                        <li class="lists">
                             {{burger_name}}
-                            <button class="delete-burger" data-id="{{id}}">Trash!</button>
+                            <button class="delete-burger btn btn-danger" data-id="{{id}}">Trash!</button>
                         </li>
                     {{/if}}
                 {{/each}}
             </ol>
         </div>
     </div>
-
+    <hr>
     <div class="text-center">
         <h4>Add a burger to eat later</h4>
         <form class="form create-form">
             <div class="form-group">
                 <label for="burger-name">Burger Name: </label>
                 <input class="burger-name" type="text">
-                <button type="submit" class="add-burger">Add Burger!</button>
+                <button type="submit" class="add-burger btn btn-primary">Add Burger!</button>
             </div>
         </form>
     </div>
