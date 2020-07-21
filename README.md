@@ -1,5 +1,5 @@
-# burger
-A burger eating app.
+# Burger
+Deployed version: https://desolate-chamber-92152.herokuapp.com/
 
 This app utilzes ORM, Express, handlebars, sql, and node.js to run. This was created as an assignment for UCB bootcamp class.
 Looks very basic at first, but it's quite complicated to create with many files and routing. Also learning about CRUD
